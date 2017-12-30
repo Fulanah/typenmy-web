@@ -1,12 +1,9 @@
 <html>
 <title>Home| Typenmy Enterprise</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
-    
-<body>
-    
-<style>
-.header{
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+    .header{
   background-color: green;
   font-family: arial;
   color: white;
@@ -15,12 +12,29 @@
   text-align:center;
 
 }
-p#motto{font-style:italic;}
-    
+p#motto{
+  font-style:italic;
+}
 img {max-width:100%;}
 
-</style>
+}
+button {
+ background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+button:hover {
+  background: lightblue;;
+}
 
+    </style>
+    
+<body>
 
 <div id="main name" class="header">
   <span class="header-name">
@@ -29,18 +43,23 @@ img {max-width:100%;}
   </span>
 </div><br><br>
     
-<div class="w3-content w3-display-container">
+<div id="banner" class="w3-content w3-display-container">
  <img class="mySlides" src="http://i86.photobucket.com/albums/k91/Fulanah/typen%20banner_zps9x6z8vjs.jpg" style="width 100%;height:auto;"> 
 <img class="mySlides" src="http://i86.photobucket.com/albums/k91/Fulanah/holiday%20banner_zpsp5nleoue.jpg" style="width 100%;height:auto;">
 </div>
- 
+<br><br>  
+<div id="nagivate "class="btn">
+   <button onclick="myFunction()">Online Order</button>
 </div>
-  
+    
+    <script>
+        //create button
+function myFunction() {
+    var btn = document.createElement("BUTTON");
 
-  </body>
-</html>
+}
 
-<script>
+//image slider
 var slideIndex = 0;
 carousel();
 
@@ -55,10 +74,9 @@ function carousel() {
     x[slideIndex-1].style.display = "block"; 
     setTimeout(carousel, 2000); // Change image every 2 seconds
 }
-</script>  
-  
-</div>
-  
+        
+    </script>
+
 
   </body>
 </html>
