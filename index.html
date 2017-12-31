@@ -1,7 +1,7 @@
 <html>
-    <head>
-<link rel="icon" type="image/png" sizes="16x16" href="http://i86.photobucket.com/albums/k91/Fulanah/favicon.ico_zpslj62kpqg.png">
-<title>Home| Typenmy Enterprise</title> </head>
+<head><link rel="icon" type="image/png" sizes="16x16" href="http://i86.photobucket.com/albums/k91/Fulanah/favicon.ico_zpslj62kpqg.png">
+<title>Home| Typenmy Enterprise</title>
+</head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style>
@@ -17,7 +17,6 @@
 p#motto{
   font-style:italic;
 }
-img {max-width:100%;}
 
 }
 button {
@@ -36,36 +35,32 @@ button:hover {
 .btn{
   text-align: center;
 }
-</style>
-    
+
+
+    </style>
+   
 <body>
 
 <div id="main name" class="header">
-  <span class="header-name">
+ <span class="header-name">
     <h1>Typenmy Enterprise</h1>
     <p id="motto">Printing & Designing service</p>
   </span>
-</div><br><br>
+  </div><br><br>
     
 <div id="banner" class="w3-content w3-display-container">
  <img class="mySlides" src="http://i86.photobucket.com/albums/k91/Fulanah/typen%20banner_zps9x6z8vjs.jpg" style="width 100%;height:auto;"> 
 <img class="mySlides" src="http://i86.photobucket.com/albums/k91/Fulanah/holiday%20banner_zpsp5nleoue.jpg" style="width 100%;height:auto;">
 </div>
 <br><br>  
-<div id="nagivate "class="btn">
-   <button onclick="myFunction()">Online Order</button>
+<div id="nagivate" class="btn">
+   <button onclick="window.location='http://www.facebook.com/typenmy';">Online order</button>
    <button onclick="myFunction()">Delivery Enquiries</button>
    <button onclick="myFunction()">Contact Us</button>
 </div>
-    
-    <script>
-        //create button
-function myFunction() {
-    var btn = document.createElement("BUTTON");
 
-}
-
-//image slider
+<script>
+    //image slider
 var slideIndex = 0;
 carousel();
 
@@ -78,12 +73,9 @@ function carousel() {
     slideIndex++;
     if (slideIndex > x.length) {slideIndex = 1} 
     x[slideIndex-1].style.display = "block"; 
-    setTimeout(carousel, 2000); // Change image every 2 seconds
+    setTimeout(carousel, 3000); // Change image every 3 seconds
 }
-        
     </script>
-
-
   </body>
 </html>
 
