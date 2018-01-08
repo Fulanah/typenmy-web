@@ -96,7 +96,7 @@
   display: block;
 }
 
-/*.ism-caption {
+.ism-caption {
   -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
   padding: 0 1em;
   text-shadow: none;
@@ -106,7 +106,7 @@
   height: auto;
   text-align: center;
   visibility: hidden;
-}*/
+}
 
 a.ism-image-link .ism-caption, a.ism-caption {
   text-decoration: none;
@@ -368,7 +368,7 @@ p.ism-badge a.ism-link:hover {
 
 #my-slider .ism-slide-0 .ism-img {
     width: 100%;
-    top: 100%; -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%);
+    top: 50%; -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%);
 }
 
 #my-slider .ism-slide-1 .ism-img-frame {
@@ -377,7 +377,7 @@ p.ism-badge a.ism-link:hover {
 
 #my-slider .ism-slide-1 .ism-img {
     height: 100%;
-    left: 100%; -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%);
+    left: 50%; -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%);
 }
 
 #my-slider .ism-slide-2 .ism-img-frame {
@@ -386,7 +386,7 @@ p.ism-badge a.ism-link:hover {
 
 #my-slider .ism-slide-2 .ism-img {
     width: 100%;
-    top: 100%; -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%);
+    top: 50%; -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%);
 }
 
 
