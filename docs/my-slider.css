@@ -96,7 +96,7 @@
   display: block;
 }
 
-.ism-caption {
+/*.ism-caption {
   -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
   padding: 0 1em;
   text-shadow: none;
@@ -106,7 +106,7 @@
   height: auto;
   text-align: center;
   visibility: hidden;
-}
+}*/
 
 a.ism-image-link .ism-caption, a.ism-caption {
   text-decoration: none;
