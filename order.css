@@ -1,0 +1,26 @@
+.header{
+  background-color: green;
+  font-family: arial;
+  color: white;
+  margin: 1%;
+  padding: 1%;
+  text-align:center;
+  font-size: 150%;
+
+}
+p#motto{
+  font-style:italic;
+}
+
+.product{
+	padding-bottom: 3%;
+  text-align: center;
+
+}
+
+.back{
+  float:right;
+  padding-top:17%;
+  padding-right: 50%;
+}
+
