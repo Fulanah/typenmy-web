@@ -60,6 +60,13 @@
 </td>
 </tr>
 <tr>
+	<td>Total Price</td>
+	<td>:</td>
+	<td><input type="text" name="total" value="">
+		<button type="button" class="btn btn-primary" onclick="updateTotal()">Refresh</button>
+	</td>
+</tr>
+<tr>
 <td> </td>
 <td> </td>
 <td><input type="submit" name="Submit" value="Submit"> <input type="reset" name="Submit2" value="Reset"></td>
@@ -69,5 +76,24 @@
 </td>
 </tr>
 </table>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#form").on("change", updateTotal);
+		//$("input[name=quantity]").on("keydown", updateTotal);
+	});
+
+	function updateTotal() {
+		var quantity = parseInt($("input[name=quantity]").val());
+		console.log(quantity+1);
+		var sizetype = parseFloat($("input[name=size]:checked").data($("input[name=type]:checked").val()));
+		console.log(sizetype);
+		var lanyard = parseFloat($("input[name=lanyard]:checked").data("price"));
+		console.log(lanyard);
+		var total = (sizetype+lanyard)*quantity;
+		$("input[name=total]").val(total);
+	}
+</script>
+
 </body>
 </html>
