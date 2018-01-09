@@ -4,30 +4,11 @@
 <title>Online order| Typenmy Enterprise</title>
  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="order.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
- <style type="text/css">
-   
-   .header{
-  background-color: green;
-  font-family: arial;
-  color: white;
-  text-align:center;
-  font-size: 150%;
-  padding: 1%;
-
-}
-p#motto{
-  font-style:italic;
-}
-.container{
-  float:left;
-  position: relative;
-  bottom: 500px;
-  left: 150px;
-}
-
+ 
 
  </style>
 <!--BUTTON-->
@@ -50,7 +31,17 @@ p#motto{
 <div id="item" class="product">
  	<table align="center">
     <tr>
-<td> 	<a href=""><img src="http://i86.photobucket.com/albums/k91/Fulanah/namecard_01_zpsypufcfw4.jpg"   class="img-thumbnail"></a> </td>
+      
+        
+<td> <div class="hovereffect">
+      <img src="http://i86.photobucket.com/albums/k91/Fulanah/namecard_01_zpsypufcfw4.jpg"   class="img-thumbnail img-responsive">
+       <div class="overlay">
+         <h2>Namecard</h2>
+           <a class="info" href="#">Order</a> 
+       </div>
+     </div>
+</td>
+       
 <td>	<a href=""><img src="http://i86.photobucket.com/albums/k91/Fulanah/banner_01_zps4iblr8ar.jpg"     class="img-thumbnail"></a> </td>
 <td>	<a href=""><img src="http://i86.photobucket.com/albums/k91/Fulanah/bunting_01_zpsqyhu5qmc.jpg"    class="img-thumbnail"></a> </td>
   </tr>
@@ -75,6 +66,7 @@ p#motto{
  	<input type="submit" class="btn btn-info" name="backbtn" value="Back to Home">
 	</form>
     	</div>
+    </div>
 
 </div>
 
