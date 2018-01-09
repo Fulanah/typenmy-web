@@ -10,7 +10,7 @@
 
 <table width="400" border="0" align="center" cellpadding="0" cellspacing="1">
 <tr>
-<td><form name="form1" method="post" action="https://formspree.io/typenmy@gmail.com">
+<td><form id="form" name="form1" method="post" action="https://formspree.io/typenmy@gmail.com">
 <table width="100%" border="0" cellspacing="1" cellpadding="3">
 <tr>
 <td width="16%">Subject</td>
@@ -40,23 +40,23 @@
 <tr>
 <td>Type</td>
 <td>:</td>
-<td><input name="type" type="radio" id="type" value="laminated">Laminated<br>
-	<input name="type" type="radio" id="type" value="pocket">PVC Pocket<br>
+<td><input name="type" type="radio" id="type" value="laminated" data-price="">Laminated<br>
+	<input name="type" type="radio" id="type" value="pocket" data-price="">PVC Pocket<br>
 </td>
 </tr>
 <tr>
 <td>Size</td>
 <td>:</td>
 <td>
-	<input type="radio" name="size" value="A6">A6/ 95 x 135mm (Pocket)<br>
-    <input type="radio" name="size" value="A7">A7/ 90 x 54mm (Pocket)</td>
+	<input type="radio" name="size" value="A6" data-laminated=1 data-pocket=1.6>A6/ 95 x 135mm (Pocket)<br>
+    <input type="radio" name="size" value="A7" data-laminated=0.5 data-pocket=1.1>A7/ 90 x 54mm (Pocket)</td>
 </tr>
 <tr>
 <td>Lanyard</td>
 <td>:</td>
-<td><input type="radio" name="lanyard" value="none">None<br>
-	<input type="radio" name="lanyard" value="cotton">Cotton<br>
-	<input type="radio" name="lanyard" value="nylon">Nylon<br>
+<td><input type="radio" name="lanyard" value="none" data-price=0>None<br>
+	<input type="radio" name="lanyard" value="cotton" data-price=0.7>Cotton<br>
+	<input type="radio" name="lanyard" value="nylon" data-price=1>Nylon<br>
 </td>
 </tr>
 <tr>
