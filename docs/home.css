@@ -2,7 +2,6 @@
   background-color: green;
   font-family: arial;
   color: white;
-  padding: 1%;
   text-align:center;
 
 }
@@ -23,7 +22,4 @@ button {
 }
 button:hover {
   background: lightblue;;
-}
-.btn{
-  text-align: center;
 }
