@@ -12,11 +12,12 @@ p#motto{
   font-style:italic;
 }
 .container{
-  float:left;
-  position: relative;
-  bottom: 500px;
-  left: 150px;
-}
+  float: bottom;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  }
 
 
 /*image hover effect*/
