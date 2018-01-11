@@ -10,17 +10,21 @@
 </head>
 <body>
 
-<h1 style="text-align: center; font-family: calibri; font-weight: bold; padding-top: 100px; padding-bottom: 30px;">Nametag </h1>
+<h1 style="text-align: center; font-family: calibri; font-weight: bold; padding-top: 100px; ">Nametag </h1>
 
+<!--Add price jpg-->
+<div style="text-align:center;">
+<a href="" target="_blank">View pricing</a>
+</div><br>
 
-<table width="600" border="0" align="center" cellpadding="0" cellspacing="5">
+<table width="600" border="0" align="center" cellpadding="0" cellspacing="8">
 
 <form id="form" name="form1" method="post" action="https://formspree.io/typenmy@gmail.com">
 <!--Generate unique number based on date in milliseconds-->
 <tr>
-<td>ORDER ID</td>
+<td>ORDER #</td>
 <td>:</td>
-<td width="82%"><input name="subject" type="text" id="subject" size="50" readonly="true"></td>
+<td width="82%"><input name="order_id" type="text" id="subject" size="50" readonly="true"></td>
 </tr>
 
 <tr>
@@ -32,13 +36,13 @@
 <tr>
 <td>Email</td>
 <td>:</td>
-<td><input name="customer_mail" type="text" id="customer_mail" size="50"></td>
+<td><input name="Email" type="text" id="customer_mail" size="50"></td>
 </tr>
 
 <tr>
 <td>Phone no</td>
 <td>:</td>
-<td><input name="customer_mail" type="text" id="customer_mail" size="50"></td>
+<td><input name="Phone" type="text" id="customer_phone" size="50"></td>
 </tr>
 
 <tr>
@@ -79,6 +83,16 @@
 </tr>
 
 <tr>
+<td>Pick-up</td>
+<td>:</td>
+<td><input type="radio" name="delivery" value="Self-pick up">Self-pickup in IIUM Gombak<br>
+	<input type="radio" name="delivery" value="Delivery in iium">Delivery inside IIUM<br>
+	<input type="radio" name="delivery" value="Postage delivery">Delivery by postage<br>
+</td>
+</tr>
+
+
+<tr>
 	<td>Total Price</td>
 	<td>:</td>
 	<td><input type="text" name="total" value="" readonly="true">
@@ -89,10 +103,16 @@
 <tr>
 <td> </td>
 <td> </td>
-<td><input type="submit" name="Submit" value="Submit" class=""> <input type="reset" name="Submit2" value="Reset" class=""></td>
-
+<td><input type="submit" name="Submit" value="Submit" class=""> <input type="reset" name="Submit2" value="Reset" class=""> </td>
 </form>
+
 </table>
+
+<div style="text-align: center;">
+<form action="../index.html">
+	<input type="submit" name="home" value="Back to home" style="">
+</form>
+</div>
 
 
 <script type="text/javascript">
@@ -111,6 +131,8 @@
 		var total = (sizetype+lanyard)*quantity;
 		$("input[name=total]").val(total);
 	}
+
+
 
 
 </script>
