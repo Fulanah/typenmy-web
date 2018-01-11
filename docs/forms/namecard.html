@@ -24,7 +24,7 @@
 <tr>
 <td>ORDER #</td>
 <td>:</td>
-<td width="82%"><input name="subject" type="text" id="subject" size="50" readonly="true"></td>
+<td width="82%"><input name="order_id" type="text" id="subject" size="50" readonly="true"></td>
 </tr>
 
 <tr>
@@ -36,13 +36,13 @@
 <tr>
 <td>Email</td>
 <td>:</td>
-<td><input name="customer_mail" type="text" id="customer_mail" size="50"></td>
+<td><input name="Email" type="text" id="customer_mail" size="50"></td>
 </tr>
 
 <tr>
 <td>Phone no</td>
 <td>:</td>
-<td><input name="customer_phone" type="text" id="customer_phone" size="50"></td>
+<td><input name="Phone" type="text" id="customer_phone" size="50"></td>
 </tr>
 
 <tr>
@@ -50,12 +50,12 @@
 <td>:</td>
 <td>
 	<select>
-		<option value="260 artcard"> 260gsm Art Card</option>
-		<option value="260 matt"> 260gsm Matt laminate</option>
-		<option value="157 matt"> 157gsm Matt laminate</option>
-		<option value="matt + 1 UV">260gsm Matt laminate + 1 side UV spot</option>
-		<option value="matt + 2 UV">260gsm Matt laminate + 2 side UV spot</option>
-		<option value="230 ivory">230gsm Ivory</option>
+		<option name="type" value="260 artcard"> 260gsm Art Card</option>
+		<option name="type" value="260 matt"> 260gsm Matt laminate</option>
+		<option name="type" value="157 matt"> 157gsm Matt laminate</option>
+		<option name="type" value="matt + 1 UV">260gsm Matt laminate + 1 side UV spot</option>
+		<option name="type" value="matt + 2 UV">260gsm Matt laminate + 2 side UV spot</option>
+		<option name="type" value="230 ivory">230gsm Ivory</option>
 	</select>
 </td>
 </tr>
@@ -65,10 +65,10 @@
 <td >:</td>
 <td >
 <select>
-  <option value="2 box">200</option>
-  <option value="3 box">300</option>
-  <option value="5 box">500</option>
-  <option value="10 box">1000</option>
+  <option name="quantity" value="2 box">200</option>
+  <option name="quantity" value="3 box">300</option>
+  <option name="quantity" value="5 box">500</option>
+  <option name="quantity" value="10 box">1000</option>
 </select>
 
 </td>
