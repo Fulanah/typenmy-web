@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="icon" type="image/png" sizes="16x16" href="http://i86.photobucket.com/albums/k91/Fulanah/favicon.ico_zpslj62kpqg.png">
+<title>Namecard</title>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<h1 style="text-align: center; font-family: calibri; font-weight: bold; padding-top: 100px; ">Namecard </h1>
+
+<!--Add price jpg-->
+<div style="text-align:center;">
+<a href="" target="_blank">View pricing</a>
+</div><br>
+
+<table width="600" border="0" align="center" cellpadding="0" cellspacing="8">
+
+<form id="form" name="form1" method="post" action="https://formspree.io/typenmy@gmail.com">
+<!--Generate unique number based on date in milliseconds-->
+<tr>
+<td>ORDER #</td>
+<td>:</td>
+<td width="82%"><input name="subject" type="text" id="subject" size="50" readonly="true"></td>
+</tr>
+
+<tr>
+<td>Name</td>
+<td>:</td>
+<td><input name="name" type="text" id="name" size="50"></td>
+</tr>
+
+<tr>
+<td>Email</td>
+<td>:</td>
+<td><input name="customer_mail" type="text" id="customer_mail" size="50"></td>
+</tr>
+
+<tr>
+<td>Phone no</td>
+<td>:</td>
+<td><input name="customer_mail" type="text" id="customer_phone" size="50"></td>
+</tr>
+
+<tr>
+<td>Type</td>
+<td>:</td>
+<td>
+	<select>
+		<option value="260 artcard"> 260gsm Art Card</option>
+		<option value="260 matt"> 260gsm Matt laminate</option>
+		<option value="157 matt"> 157gsm Matt laminate</option>
+		<option value="matt + 1 UV">260gsm Matt laminate + 1 side UV spot</option>
+		<option value="matt + 2 UV">260gsm Matt laminate + 2 side UV spot</option>
+		<option value="230 ivory">230gsm Ivory</option>
+	</select>
+</td>
+</tr>
+
+<tr>
+<td >Quantity (1 box = 100pcs)</td>
+<td >:</td>
+<td >
+<select>
+  <option value="2 box">200</option>
+  <option value="3 box">300</option>
+  <option value="5 box">500</option>
+  <option value="10 box">1000</option>
+</select>
+
+</td>
+</tr>
+
+<tr>
+<td>Other quantity</td>
+<td>:</td>
+<td><input name="quantity" type="number" id="qty" size="3"></td>
+</tr>
+
+
+
+<tr>
+<td>Size</td>
+<td>:</td>
+<td>
+	<input type="text" name="size" value="90mm x 54mm">
+    <input type="reset" name="custom" value="Default">
+</tr>
+
+<tr>
+<td>Printing side</td>
+<td>:</td>
+<td><input type="radio" name="side" value="1sided">1 sided<br>
+	<input type="radio" name="side" value="2sided">2 sided<br>
+</td>
+</tr>
+
+<tr>
+<td>Remarks</td>
+<td>:</td>
+<td><textarea name="detail" cols="50" rows="3" id="detail"></textarea></td>
+</tr>
+
+<tr>
+<td>Pick-up</td>
+<td>:</td>
+<td><input type="radio" name="delivery" value="Self-pick up">Self-pickup in IIUM Gombak<br>
+	<input type="radio" name="delivery" value="Delivery in iium">Delivery inside IIUM<br>
+	<input type="radio" name="delivery" value="Postage delivery">Delivery by postage<br>
+</td>
+</tr>
+
+
+<tr>
+	<td>Total Price</td>
+	<td>:</td>
+	<td>Will send quotation via email</td>
+</tr>
+
+<tr>
+<td> </td>
+<td> </td>
+<td><input type="submit" name="Submit" value="Submit" class=""> <input type="reset" name="Submit2" value="Reset" class=""></td>
+
+</form>
+</table>
+
+<div style="text-align: center;">
+<form action="../index.html">
+	<input type="submit" name="home" value="Back to home" style=""> 
+	
+</form>
+
+</div>
+</body>
+</html>
