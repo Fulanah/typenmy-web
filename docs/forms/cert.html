@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="icon" type="image/png" sizes="16x16" href="http://i86.photobucket.com/albums/k91/Fulanah/favicon.ico_zpslj62kpqg.png">
+<title>Certificate</title>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<h1 style="text-align: center; font-family: calibri; font-weight: bold; padding-top: 100px; ">Certificate</h1>
+
+<!--Add price jpg-->
+<div style="text-align:center;">
+<a href="https://www.dropbox.com/s/r3sp5rgsgh9bctg/certificate.pdf?dl=0" target="_blank">View pricing</a>
+</div><br>
+
+<table width="600" border="0" align="center" cellpadding="0" cellspacing="10">
+
+<form id="form" name="form1" method="post" action="https://formspree.io/typenmy@gmail.com">
+<!--Generate unique number based on date in milliseconds-->
+<!--<tr>
+<td>ORDER #</td>
+<td>:</td>
+<td width="82%"><input name="order_id" type="text" id="subject" size="50" readonly="true"></td>
+</tr> -->
+
+<tr>
+<td>Name</td>
+<td>:</td>
+<td><input name="name" type="text" id="name" size="50"></td>
+</tr>
+
+<tr>
+<td>Email</td>
+<td>:</td>
+<td><input name="Email" type="text" id="customer_mail" size="50"></td>
+</tr>
+
+<tr>
+<td>Phone no</td>
+<td>:</td>
+<td><input name="Phone" type="text" id="customer_phone" size="50"></td>
+</tr>
+
+<tr>
+<td >Quantity</td>
+<td >:</td>
+<td ><input name="quantity" type="number" id="qty" size="30"></td>
+</tr>
+
+<tr>
+<td>Type</td>
+<td>:</td>
+<td><input name="type" type="radio" id="type" value="160gsm" >160gsm white card<br>
+	<input name="type" type="radio" id="type" value="230gsm" >230gsm white card<br>
+	<input name="type" type="radio" id="type" value="goldBorder">Yellow card + Gold border<br>
+	<input name="type" type="radio" id="type" value="ownPaper">Own paper <span style="color:red;">*Please prepare additional 10 papers</span>
+</td>
+</tr>
+
+<tr>
+<td>Colour</td>
+<td>:</td>
+<td><input name="type" type="radio" id="type" value="half-col">Half colour <span style="color:red;">*Select here if 'Type' Yellow card + Gold border</span><br>
+	<input name="type" type="radio" id="type" value="full-col">Full colour<br>
+</td>
+</tr>
+
+<tr>
+	<td></td>
+	<td></td>
+<td style="color: red"> *Please prepare your artwork in PDF/ Jpg/ Png format.</td>
+</tr>
+
+<tr>
+<td>Remarks</td>
+<td>:</td>
+<td><textarea name="detail" cols="50" rows="3" id="detail"></textarea></td>
+</tr>
+
+<tr>
+<td>Pick-up</td>
+<td>:</td>
+<td><input type="radio" name="delivery" value="Self-pick up">Self-pickup in IIUM Gombak<br>
+	<input type="radio" name="delivery" value="Delivery in iium">Delivery inside IIUM<br>
+	<input type="radio" name="delivery" value="Postage delivery">Delivery by postage<br>
+</td>
+</tr>
+
+
+<tr>
+	<td>Total Price</td>
+	<td>:</td>
+	<td>Will send quotation via email</td>
+</tr>
+
+
+<tr>
+<td> </td>
+<td> </td>
+<td><input type="submit" name="Submit" value="Submit" class=""> <input type="reset" name="Submit2" value="Reset" class=""> </td>
+</form>
+
+</table>
+
+<div style="text-align: center;">
+<form action="../index.html">
+	<input type="submit" name="home" value="Back to home" style="">
+</form>
+</div>
+
+</body>
+</html>
