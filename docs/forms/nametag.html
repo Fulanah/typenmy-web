@@ -60,6 +60,14 @@
 </tr>
 
 <tr>
+<td>Printing side</td>
+<td>:</td>
+<td><input name="side" type="radio" id="side" value="1side" data-price=0>1 sided<br>
+	<input name="side" type="radio" id="side" value="2side" data-price=0.3>2 sided<br>
+</td>
+</tr>
+
+<tr>
 <td>Size</td>
 <td>:</td>
 <td>
@@ -85,7 +93,7 @@
 <tr>
 <td>Remarks</td>
 <td>:</td>
-<td><textarea name="detail" cols="50" rows="3" id="detail"></textarea></td>
+<td><textarea name="detail" cols="50" rows="3" id="detail"></textarea><br><span style="color:red">*Put your Google Drive/ Dropbox link & comment here. (if any)</span></td>
 </tr>
 
 <tr>
@@ -134,7 +142,9 @@
 		console.log(sizetype);
 		var lanyard = parseFloat($("input[name=lanyard]:checked").data("price"));
 		console.log(lanyard);
-		var total = (sizetype+lanyard)*quantity;
+		var side = parseFloat($("input[name=side]:checked").data("price"));
+		console.log(lanyard);
+		var total = (sizetype+lanyard+side)*quantity;
 		$("input[name=total]").val(total);
 	}
 
