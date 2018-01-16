@@ -305,7 +305,7 @@ p.ism-badge a.ism-link:hover {
     border-radius: 25px;
     width: 50px; height: 50px; background-size: 16px 16px; top: 50%; margin-top: -25px;
     color: #fff; background-color: rgba(0, 0, 0, 0.3);
-    visibility: hidden;
+    display: block; visibility: visible;
 }
 
 #my-slider .ism-button-prev {
@@ -335,10 +335,6 @@ p.ism-badge a.ism-link:hover {
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-#my-slider:hover .ism-button {
-    visibility: visible;
-}
-
 #my-slider .ism-radios {
     display: block;
     height: 20px;
@@ -362,31 +358,40 @@ p.ism-badge a.ism-link:hover {
 
 /* SLIDES */
 
-#my-slider .ism-slide-0 .ism-img-frame {
-    width: 100%;
+#my-slider .ism-slide-0 img {
+    width: 100%; height: 100%;
 }
 
 #my-slider .ism-slide-0 .ism-img {
-    width: 100%;
-    top: 50%; -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%);
+    width: 100%; height: 100%;
 }
 
-#my-slider .ism-slide-1 .ism-img-frame {
-    height: 100%;
+#my-slider .ism-slide-1 img {
+    width: 100%; height: 100%;
 }
 
 #my-slider .ism-slide-1 .ism-img {
-    height: 100%;
-    left: 50%; -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%);
+    width: 100%; height: 100%;
 }
 
-#my-slider .ism-slide-2 .ism-img-frame {
-    width: 100%;
+#my-slider .ism-slide-2 img {
+    width: 100%; height: 100%;
 }
 
 #my-slider .ism-slide-2 .ism-img {
-    width: 100%;
-    top: 50%; -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%);
+    width: 100%; height: 100%;
+}
+
+#my-slider li.ism-slide-0 .ism-img {
+    top: 0; bottom: 0; left: 0; right: 0;
+}
+
+#my-slider li.ism-slide-1 .ism-img {
+    top: 0; bottom: 0; left: 0; right: 0;
+}
+
+#my-slider li.ism-slide-2 .ism-img {
+    top: 0; bottom: 0; left: 0; right: 0;
 }
 
 
@@ -517,3 +522,4 @@ p.ism-badge a.ism-link:hover {
     border: none;
     color: #fff; background-color: rgba(0, 0, 0, 0.70);
 }
+
