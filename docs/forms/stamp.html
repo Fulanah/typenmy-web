@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<h1 style="text-align: center; font-family: calibri; font-weight: bold; padding-top: 100px; ">Flash Stamp</h1>
+<h1 style="text-align: center; font-family: calibri; font-weight: bold; padding-top: 50px; ">Flash Stamp</h1>
 
 <!--Add price jpg-->
 <div style="text-align:center;">
@@ -46,29 +46,44 @@
 <td><input name="Phone" type="text" id="customer_phone" size="50"></td>
 </tr>
 
-<tr>
+<!--<tr>
 <td >Font size</td>
 <td >:</td>
 <td><input type="number" name="fontSize" value="11"></td>
+</tr> -->
+
+<tr>
+<td >Quantity</td>
+<td >:</td>
+<td ><input name="quantity" type="number" id="qty" size="30"></td>
 </tr>
 
 <tr>
-<td>Line</td>
+<td>Design/ Font type</td>
 <td>:</td>
-<td><input type="number" name="line"></td>
+<td><input type="radio" name="fontType" value="Arial">Arial<br>
+    <input type="radio" name="fontType" value="Times new roman">Times new roman<br>    
+    <input type="radio" name="fontType" value="Calibri">Calibri<br>
+    <input type="radio" name="fontType" value="Custom">Custom font<br>
+    <input type="radio" name="fontType" value="Graphic">Graphic/ Image design<br>
+</td>
 </tr>
 
 <tr>
 <td>Content</td>
 <td>:</td>
-<td><textarea name="content" cols="50" rows="4" id="content"></textarea><span style="color: red"><br>*'Enter' for each different line</span></td>
+<td><textarea name="content" cols="50" rows="4" id="content" style="color:grey">Eg: 1. Name Here.
+Phone number here.
+Address here.</textarea><span style="color: red"><br>*'Enter' for each different line</span></td>
 </tr>
 
 <tr>
-<td>Shape</td>
+<td>Stamp size (mm)</td>
 <td>:</td>
-<td><input type="radio" name="shape" value="Round">Round<br>
-	<input type="radio" name="shape" value="Rectangle">Rectangle<br>	
+<td><input type="radio" name="shape" value="Round">Round: 30 x 30<br>
+	<input type="radio" name="shape" value="22 x 67">22 x 67<br>	
+    <input type="radio" name="shape" value="27 x 78">27 x 78<br>
+    <input type="radio" name="shape" value="32 x 80">32 x 80<br>
 </td>
 </tr>
 
@@ -84,24 +99,27 @@
 <tr>
 <td>Remarks</td>
 <td>:</td>
-<td><textarea name="detail" cols="50" rows="3" id="detail"></textarea>
-	<br><span style="color:red">*Put your Google Drive/ Dropbox link & comment here. (if any)</span></td>
+<td><textarea name="remarks" cols="50" rows="3" id="detail" style="color:grey">FOR OWN DESIGN/ LIST of CONTENT. Put your Google Drive/ Dropbox link & comment here (if any).</textarea>
 </tr>
 
 <tr>
 <td>Pick-up</td>
 <td>:</td>
 <td><input type="radio" name="delivery" value="Self-pick up">Self-pickup in IIUM Gombak<br>
-	<input type="radio" name="delivery" value="Delivery in iium">Delivery inside IIUM<br>
-	<input type="radio" name="delivery" value="Postage delivery">Delivery by postage<br>
+    <input type="radio" name="delivery" value="Delivery in iium">Delivery inside IIUM<br>
+    <input type="radio" name="delivery" value="Postage delivery">Delivery by postage<br>
+<tr>    <td>Address</td>
+<td>:</td>
+<td><textarea name="address" cols="50" rows="3" id="detail" style="color:grey">To be filled if you pick 'Delivery by postage'</textarea>
 </td>
+</tr>
 </tr>
 
 
 <tr>
 	<td>Total Price</td>
 	<td>:</td>
-	<td>Will send quotation via email</td>
+	<td>Will send quotation & design review via email</td>
 </tr>
 
 
