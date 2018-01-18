@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<h1 style="text-align: center; font-family: calibri; font-weight: bold; padding-top: 100px; ">Document/ Notes</h1>
+<h1 style="text-align: center; font-family: calibri; font-weight: bold; padding-top: 3px; ">Document/ Notes</h1>
 
 <!--Add price jpg-->
 <div style="text-align:center;">
@@ -47,21 +47,39 @@
 </tr>
 
 <tr>
-<td >File count</td>
+<td >Number of files</td>
 <td >:</td>
 <td><input type="number" name="count" value="1"></td>
 </tr>
 
 <tr>
-<td>Total pages:</td>
+<td>Colour pages</td>
 <td>:</td>
-<td><input type="number" name="totPage"></td>
+<td><textarea name="colorPg" cols="50" rows="3" id="color" style="color: grey">Eg: 
+	 1. filename = 2,4,6,7 
+	 2. filename2 = 45,78,190
+	</textarea><span style="color: red"><br>*Other pages/ blank will be considered as black & white</span></td>
 </tr>
 
 <tr>
-<td>Colour pages (if any)</td>
+<td>Printing side</td>
 <td>:</td>
-<td><textarea name="colorPg" cols="50" rows="3" id="color"></textarea><span style="color: red"><br>*Other pages will be considered as black & white</span></td>
+<td><input type="radio" name="side" value="1side">1 sided<br>
+	<input type="radio" name="side" value="2side">2 sided<br>	
+</td>
+</tr>
+
+<tr>
+<td>Settings for slide (if any)</td>
+<td>:</td>
+<td><input type="radio" name="settings" value="None">None <span style="color: red">*Select if no slides file</span><br>
+	<input type="radio" name="settings" value="Type A">Type A<br>	
+	<input type="radio" name="settings" value="Type B">Type B<br>
+	<input type="radio" name="settings" value="Type C">Type C<br>
+	<input type="radio" name="settings" value="Type C">Type D<br>
+	<input type="radio" name="settings" value="Type E">Type E<br>	
+
+</td>
 </tr>
 
 <tr>
@@ -93,18 +111,22 @@
 <tr>
 <td>Remarks</td>
 <td>:</td>
-<td><textarea name="detail" cols="50" rows="3" id="detail"></textarea>
-	<br><span style="color:red">*Put your Google Drive/ Dropbox link & comment here. (if any)</span></td>
+<td><textarea name="remarks" cols="50" rows="3" id="detail" style="color:grey">Put your Google Drive/ Dropbox link & comment here. (if any)</textarea>
 </tr>
 
 <tr>
 <td>Pick-up</td>
 <td>:</td>
 <td><input type="radio" name="delivery" value="Self-pick up">Self-pickup in IIUM Gombak<br>
-	<input type="radio" name="delivery" value="Delivery in iium">Delivery inside IIUM<br>
-	<input type="radio" name="delivery" value="Postage delivery">Delivery by postage<br>
+    <input type="radio" name="delivery" value="Delivery in iium">Delivery inside IIUM <span style="color: red">*For order above RM 15 only </span><br>
+    <input type="radio" name="delivery" value="Postage delivery">Delivery by postage<br>
+<tr>    <td>Address</td>
+<td>:</td>
+<td><textarea name="address" cols="50" rows="3" id="detail" style="color:grey">To be filled if you pick 'Delivery by postage'</textarea>
 </td>
 </tr>
+</tr>
+
 
 
 <tr>
