@@ -54,10 +54,10 @@
 <tr>
 <td>Type</td>
 <td>:</td>
-<td><input name="type" type="radio" id="type" value="160gsm" >160gsm white card<br>
-	<input name="type" type="radio" id="type" value="230gsm" >230gsm white card<br>
-	<input name="type" type="radio" id="type" value="goldBorder">Yellow card + Gold border<br>
-	<input name="type" type="radio" id="type" value="ownPaper">Own paper <span style="color:red;">
+<td><input name="type" type="radio" id="type" value="160gsm" data-price="" >160gsm white card<br>
+	<input name="type" type="radio" id="type" value="230gsm" data-price="">230gsm white card<br>
+	<input name="type" type="radio" id="type" value="yellow" data-price="">Yellow card + Gold border<br>
+	<input name="type" type="radio" id="type" value="own" data-price="">Own paper <span style="color:red;">
 	*Please prepare additional 10 papers</span>
 </td>
 </tr>
@@ -65,8 +65,10 @@
 <tr>
 <td>Colour</td>
 <td>:</td>
-<td><input name="type" type="radio" id="type" value="half-col">Half colour <span style="color:red;">*Select here if 'Type' Yellow card + Gold border</span><br>
-	<input name="type" type="radio" id="type" value="full-col">Full colour<br>
+<td><input name="colour" type="radio" id="type" value="half-col" data-160gsm=0.8 data-230gsm=1 data-yellow=0.8 data-own=0.7>
+	Half colour <span style="color:red;">*Select here if 'Type' Yellow card + Gold border</span><br>
+
+	<input name="colour" type="radio" id="type" value="full-col" data-160gsm=1 data-230gsm=1.2 data-yellow=0 data-own=0.9>Full colour<br>
 </td>
 </tr>
 
@@ -79,24 +81,30 @@
 <tr>
 <td>Remarks</td>
 <td>:</td>
-<td><textarea name="detail" cols="50" rows="3" id="detail"></textarea>
-	<br><span style="color:red">*Put your Google Drive/ Dropbox link & comment here. (if any)</span></td>
+<td><textarea name="remarks" cols="50" rows="3" id="detail" style="color:grey">Put your Google Drive/ Dropbox link & comment here. (if any)</textarea>
 </tr>
 
 <tr>
 <td>Pick-up</td>
 <td>:</td>
 <td><input type="radio" name="delivery" value="Self-pick up">Self-pickup in IIUM Gombak<br>
-	<input type="radio" name="delivery" value="Delivery in iium">Delivery inside IIUM<br>
-	<input type="radio" name="delivery" value="Postage delivery">Delivery by postage<br>
+    <input type="radio" name="delivery" value="Delivery in iium">Delivery inside IIUM<br>
+    <input type="radio" name="delivery" value="Postage delivery">Delivery by postage<br>
+<tr>    <td>Address</td>
+<td>:</td>
+<td><textarea name="address" cols="50" rows="3" id="detail" style="color:grey">To be filled if you pick 'Delivery by postage'</textarea>
 </td>
+</tr>
 </tr>
 
 
 <tr>
 	<td>Total Price</td>
 	<td>:</td>
-	<td>Will send quotation via email</td>
+	<td><input type="text" name="total" value="" readonly="true">
+		<button type="button"  onclick="updateTotal()">Calculate</button>
+	</td>
+	<!--<td>Will send quotation via email</td>-->
 </tr>
 
 
@@ -133,5 +141,21 @@
     })();
 </script>
 <!-- /WhatsHelp.io widget -->
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#form").on("change", updateTotal);
+		//$("input[name=quantity]").on("keydown", updateTotal);
+	});
+
+	function updateTotal() {
+		var quantity = parseInt($("input[name=quantity]").val());
+		console.log(quantity+1);
+		var typeColour = parseFloat($("input[name=colour]:checked").data($("input[name=type]:checked").val()));
+		console.log(type);
+		var total = typeColour*quantity;
+		$("input[name=total]").val(total);
+	}
+</script>
 </body>
 </html>
