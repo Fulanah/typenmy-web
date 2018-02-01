@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="icon" type="image/png" sizes="16x16" href="http://i86.photobucket.com/albums/k91/Fulanah/favicon.ico_zpslj62kpqg.png">
+	<title>About Us</title>
+	 <meta charset="utf-8">
+ 	 <meta name="viewport" content="width=device-width, initial-scale=1">
+ 	 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="footer.css">
+</head>
+<body>
+
+	 <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">TYPENMY</h2>
+    <p class="w3-opacity"><i>We have a passion for creative printing industry</i></p>
+    <p class="w3-justify">Typenmy Enterprise officially started operation in 2016 in IIUM Gombak. Previously, we don't have any physical shop and customers's make order
+   						  only through whatsapp or facebook messenger. Alhamdulillah in November 2017, we manage to get a lot inside KICT IIUM Gombak. You can find our small
+   						  humble shop near KICT Cafeteria. We are focusing on the printing industry but we do provide designing service with affordable price for our customers'
+   						  convenience. We hope we can improve in the future and and give our customers' the best experience during using our services. Thank you. :) </p>
+
+      <div style="text-align: center;">
+        <img src="http://i86.photobucket.com/albums/k91/Fulanah/kedai_zpsv8f7vmbv.jpg" class="w3-round w3-margin-bottom" style="width:50%">
+      </div>
+
+         <div class="container_button"> 
+ 			 <form action="../index.html">
+			  <input type="submit" class="btn btn-info" name="backbtn" value="Back to Home">
+ 			 </form> 
+		 </div>
+  </div>
+
+
+  <!--  Not in used yet..
+
+ 
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round" alt="Random Name" style="width:60%">
+      </div> 
+    </div> -->
+ 
+
+</body>
+</html>
